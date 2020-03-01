@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Trade Winds';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Trade Winds'), local('TradeWinds'), url(https://fonts.gstatic.com/s/tradewinds/v8/AYCPpXPpYNIIT7h8-QenM0Jt5vY.ttf) format('truetype');
+}
+.flex-row-nowrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.flex-column-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.center-center {
+  justify-content: center;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: url("../images/img10.png");
+  background-position: center;
+}
+.container {
+  max-width: 1620px;
+  margin: 0 auto;
+}
+.container header.header-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.container main {
+  width: 100%;
+  height: 100vh;
+}
+.container div.logo {
+  display: flex;
+}
+.container img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding-top: 10px;
+}
+.container h1 {
+  margin-left: 10px;
+  font-family: "Trade Winds";
+  color: #ffcc01;
+}
+.container nav {
+  display: inline-flex;
+  justify-content: flex-end;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.container nav a {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #ffcc01;
+  margin-right: 20px;
+}
+a:hover {
+  border-bottom: 2px dashed #ffcc01;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  padding-top: 15px;
+  display: flex;
+}
+div.main-content-left {
+  width: 49%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 3px dashed #ffcc01;
+  padding: 15px;
+}
+div.main-content-right {
+  width: 49%;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px dashed #ffcc01;
+  padding: 15px;
+  border-left: 3px dashed #ffcc01;
+}
+p {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Open Sans";
+  font-size: 3em;
+  color: whitesmoke;
+}
+button {
+  background-color: #4c4981;
+  color: whitesmoke;
+  padding: 6px 20px;
+  cursor: pointer;
+  border: 1px solid #bbb;
+  overflow: visible;
+  white-space: nowrap;
+}
+h2 {
+  font-family: "Trade Winds";
+  font-size: 2.6em;
+  color: #ffcc01;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #4c4981;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
