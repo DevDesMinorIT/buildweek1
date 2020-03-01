@@ -33,8 +33,9 @@ html {
 body {
      background-image: url("../images/img10.png");
      background-position: center;
+     background-size: fit;
+     background-repeat: no-repeat;
 }
-
 .container {
      max-width: 1620px;
      margin: 0 auto;
@@ -92,7 +93,8 @@ div.main-content-left {
      flex-direction: column;
      flex-wrap: wrap;
      align-items: center;
-     border-top: 3px dashed @color-yellow;
+     border-top: 5px dashed @color-yellow;
+     border-bottom: 3px solid @color-purple;
      padding: 15px;
      //  background-image: url("../images/img4.jpg");
      //  background-size: cover;
@@ -105,9 +107,11 @@ div.main-content-right {
      display: flex;
      flex-direction: column;
      align-items: center;
-     border-bottom: 3px dashed @color-yellow;
-     padding: 15px;
-     border-left: 3px dashed @color-yellow;
+     border-bottom: 5px dashed @color-yellow;
+     padding: 15px 25px;
+     border-left: 6px solid @color-purple;
+     border-top: 3px solid @color-purple;
+     margin-left: 10px;
      //  background-image: url("../images/img9.jpg");
      //  background-size: cover;
      //  background-repeat: no-repeat;
@@ -115,7 +119,7 @@ div.main-content-right {
 }
 p {
      text-align: center;
-     margin-top: 20px;
+     margin-top: 40px;
      font-family: @fontBody;
      font-size: 3em;
      color: whitesmoke;
@@ -125,14 +129,18 @@ button {
      color: whitesmoke;
      padding: 6px 20px;
      cursor: pointer;
-     border: 1px solid #bbb;
+     border: 1px solid #fff;
      overflow: visible;
      white-space: nowrap;
+     font-size: 3em;
+     border-radius: 10px;
+     margin-top: 70px;
 }
 h2 {
      font-family: @fontHeading;
      font-size: 2.6em;
      color: @color-yellow;
+     filter: invert(1) grayscale(1) contrast(9) drop-shadow(0.05em 0.05em #bbb);
 }
 footer {
      display: flex;

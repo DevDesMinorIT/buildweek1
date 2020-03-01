@@ -35,6 +35,8 @@ html {
 body {
   background-image: url("../images/img10.png");
   background-position: center;
+  background-size: fit;
+  background-repeat: no-repeat;
 }
 .container {
   max-width: 1620px;
@@ -95,7 +97,8 @@ div.main-content-left {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  border-top: 3px dashed #ffcc01;
+  border-top: 5px dashed #ffcc01;
+  border-bottom: 3px solid #4c4981;
   padding: 15px;
 }
 div.main-content-right {
@@ -104,13 +107,15 @@ div.main-content-right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 3px dashed #ffcc01;
-  padding: 15px;
-  border-left: 3px dashed #ffcc01;
+  border-bottom: 5px dashed #ffcc01;
+  padding: 15px 25px;
+  border-left: 6px solid #4c4981;
+  border-top: 3px solid #4c4981;
+  margin-left: 10px;
 }
 p {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
   font-family: "Open Sans";
   font-size: 3em;
   color: whitesmoke;
@@ -120,14 +125,18 @@ button {
   color: whitesmoke;
   padding: 6px 20px;
   cursor: pointer;
-  border: 1px solid #bbb;
+  border: 1px solid #fff;
   overflow: visible;
   white-space: nowrap;
+  font-size: 3em;
+  border-radius: 10px;
+  margin-top: 70px;
 }
 h2 {
   font-family: "Trade Winds";
   font-size: 2.6em;
   color: #ffcc01;
+  filter: invert(1) grayscale(1) contrast(9) drop-shadow(0.05em 0.05em #bbb);
 }
 footer {
   display: flex;

@@ -1,0 +1,59 @@
+* {
+     box-sizing: border-box;
+}
+
+html {
+     font-size: 62.5%;
+}
+.container {
+     max-width: 1620px;
+     margin: 0 auto;
+}
+header.header-content {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+     padding-left: 10px;
+}
+main {
+     width: 100%;
+}
+div.logo {
+     display: flex;
+}
+img {
+     display: inline-block;
+     width: 40px;
+     height: 40px;
+     padding-top: 10px;
+}
+h1 {
+     margin-left: 10px;
+     font-family: "Trade Winds";
+     color: #ffcc01;
+}
+nav {
+     display: inline-flex;
+     justify-content: flex-end;
+     padding-left: 30px;
+     padding-top: 20px;
+}
+a {
+     text-decoration: none;
+     font-family: "Open Sans";
+     font-size: 16px;
+     color: #ffcc01;
+     margin-right: 20px;
+}
+a:hover {
+     border-bottom: 2px dashed #ffcc01;
+}
+footer {
+     display: flex;
+     justify-content: center;
+     background-color: #4c4981;
+     padding-bottom: 20px;
+     margin-top: 10px;
+}
