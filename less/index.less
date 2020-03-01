@@ -96,10 +96,26 @@ div.main-content-left {
      border-top: 5px dashed @color-yellow;
      border-bottom: 3px solid @color-purple;
      padding: 15px;
+     position: relative;
      //  background-image: url("../images/img4.jpg");
      //  background-size: cover;
      //  background-repeat: no-repeat;
      //  background-position: center;
+}
+.disc {
+     width: 16em;
+     height: 16em;
+     border-radius: 50%;
+     background-color: @color-yellow;
+     position: absolute;
+     top: 55%;
+     right: -9.5em;
+     transform: translateY(-50%);
+}
+.disc-content {
+     font-family: @fontHeading;
+     font-size: 7em;
+     color: @color-purple;
 }
 div.main-content-right {
      width: 49%;
