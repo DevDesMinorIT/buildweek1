@@ -2,14 +2,12 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
   src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Trade Winds';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
   src: local('Trade Winds'), local('TradeWinds'), url(https://fonts.gstatic.com/s/tradewinds/v8/AYCPpXPpYNIIT7h8-QenM0Jt5vY.ttf) format('truetype');
 }
 .flex-row-nowrap {
@@ -133,20 +131,21 @@ p {
   text-align: center;
   margin-top: 40px;
   font-family: "Open Sans";
-  font-size: 3em;
-  color: whitesmoke;
+  font-size: 5em;
+  color: black;
+  text-shadow: 0 -0.05em 0.05em lightgray;
 }
 button {
-  background-color: #4c4981;
-  color: whitesmoke;
-  padding: 6px 20px;
-  cursor: pointer;
-  border: 1px solid #fff;
-  overflow: visible;
-  white-space: nowrap;
-  font-size: 3em;
-  border-radius: 10px;
-  margin-top: 70px;
+  padding: 0.3em 0.8em;
+  border: 1px solid #446d88;
+  background: #58a linear-gradient(#4c4981, #58a);
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em gray;
+  color: white;
+  font-family: 'Roboto';
+  text-shadow: 0 -0.05em 0.05em #335166;
+  font-size: 225%;
+  line-height: 1.5;
 }
 h2 {
   font-family: "Trade Winds";
