@@ -10,11 +10,11 @@ body {
     background: linear-gradient(35deg, #ffffff, #ffcc01);
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
 }
 
 .container {
-    max-width: 1620px;
+    min-width: 100vw;
     margin: 0 auto;
 }
 
@@ -49,7 +49,7 @@ div.header-bg {
 section.call-to-action {
     min-height: 100vh;
     width: 100vw;
-    margin-left: -7px;
+    margin-left: -1px;
     padding-top: 10px;
     display: flex;
     position: relative;
@@ -66,8 +66,10 @@ div.cta-content-left {
     width: 50%;
 }
 
-div.cta-content-left {
+div.cta-content-right {
     width: 50%;
+    float: right;
+    position: fixed;
 }
 
 main {
@@ -79,11 +81,38 @@ div.logo {
     display: flex;
 }
 
+img.logo {
+    width: 200%;
+}
+
+h3 {
+    font-family: "Open Sans";
+    font-size: 5em;
+    padding-left: 1.5em;
+    text-align: center;
+    color: #4c4981;
+    text-shadow: 0 -.05em .05em lightgray;
+}
+
+button {
+    padding: .3em .8em;
+    border: 1px solid #446d88;
+    background: #58a linear-gradient(#ffd95e, #58a);
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em gray;
+    color: white;
+    font-family: 'Roboto';
+    text-shadow: 0 -.05em .05em #335166;
+    font-size: 225%;
+    line-height: 1.5;
+    margin-left: 4.7em;
+}
+
 main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    min-height: 400px;
+    min-height: 50em;
     max-width: 100vw;
     background-color: #ffd95e;
     border-top: 5px dashed #4c4981;
@@ -107,9 +136,15 @@ figure.card-content {
 img {
     display: inline-block;
     border-radius: 50%;
-
     width: 100%;
     height: 100%;
+}
+
+img.iphone {
+    border-radius: 0;
+    width: 50%;
+    height: auto;
+    float: right;
 }
 
 a#h1-id {
@@ -136,6 +171,16 @@ a {
 
 a:hover {
     border-bottom: 2px dashed #ffcc01;
+}
+
+h2 {
+    font-family: "Trade Winds";
+    font-size: 2.5em;
+}
+
+p.p {
+    font-family: "Open Sans";
+    font-size: 2.5em;
 }
 
 section.testimony {
@@ -168,14 +213,24 @@ div.testimony-content-right {
     border-left: 5px dashed #4c4981;
 }
 
+section.testimony {
+    width: 100vw;
+}
+
+a.foot {
+    color: #ffcc01;
+}
+
 footer {
+    min-height: 30em;
     min-width: 100vw;
     display: flex;
     justify-content: center;
     background-color: #000;
     background-image: url("images/imgfoot2.jpg");
-    background-size: ;
+    background-size: cover;
     background-repeat: no-repeat;
     margin-top: 50px;
     flex: 2;
+    margin-top: -5px;
 }
