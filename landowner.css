@@ -1,59 +1,181 @@
 * {
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-     font-size: 62.5%;
+    font-size: 62.5%;
 }
+
+body {
+    background: linear-gradient(35deg, #ffffff, #ffcc01);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
-     max-width: 1620px;
-     margin: 0 auto;
+    max-width: 1620px;
+    margin: 0 auto;
 }
+
 header.header-content {
-     width: 100%;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
-     justify-content: space-between;
-     padding-left: 10px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-left: 10px;
 }
+
+/* div.header-skew {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+div.header-bg {
+    postition: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4c4981;
+    transform: skewY(-6deg);
+    transform-origin: top-left;
+} */
+
+section.call-to-action {
+    min-height: 100vh;
+    width: 100vw;
+    margin-left: -7px;
+    padding-top: 10px;
+    display: flex;
+    position: relative;
+
+    background-image: url("images/img1-lotowner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 5px dashed #ffd95e;
+    9
+}
+
+div.cta-content-left {
+    width: 50%;
+}
+
+div.cta-content-left {
+    width: 50%;
+}
+
 main {
-     width: 100%;
+    width: 100%;
+    flex: 1;
 }
+
 div.logo {
-     display: flex;
+    display: flex;
 }
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 400px;
+    max-width: 100vw;
+    background-color: #ffd95e;
+    border-top: 5px dashed #4c4981;
+}
+
+div.card-container {
+    display: inline;
+    /* border: 2px solid #4c4981; */
+    width: 320px;
+    height: 300px;
+    background-color #ffd95e;
+    margin-top: 50px;
+}
+
+figure.card-content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 img {
-     display: inline-block;
-     width: 40px;
-     height: 40px;
-     padding-top: 10px;
+    display: inline-block;
+    border-radius: 50%;
+
+    width: 100%;
+    height: 100%;
 }
-h1 {
-     margin-left: 10px;
-     font-family: "Trade Winds";
-     color: #ffcc01;
+
+a#h1-id {
+    margin-left: 10px;
+    font-family: "Trade Winds";
+    font-size: 1.7em;
+    color: #4c4981;
 }
+
 nav {
-     display: inline-flex;
-     justify-content: flex-end;
-     padding-left: 30px;
-     padding-top: 20px;
+    display: inline-flex;
+    justify-content: flex-end;
+    padding-left: 30px;
+    padding-top: 20px;
 }
+
 a {
-     text-decoration: none;
-     font-family: "Open Sans";
-     font-size: 16px;
-     color: #ffcc01;
-     margin-right: 20px;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #4c4981;
+    margin-right: 20px;
 }
+
 a:hover {
-     border-bottom: 2px dashed #ffcc01;
+    border-bottom: 2px dashed #ffcc01;
 }
+
+section.testimony {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-top: 5px dashed #ffd95e;
+    justify-content: center;
+}
+
+div.testimony-content-left {
+    max-width: 50%;
+    min-height: 30em;
+    display: inline-block;
+    padding-top: 2em
+}
+
+div.testimony-content-right {
+    max-width: 50%;
+    min-height: 30em;
+    display: inline-block;
+    font-family: "Open Sans";
+    font-size: 2.5em;
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 4em;
+    border-left: 5px dashed #4c4981;
+}
+
 footer {
-     display: flex;
-     justify-content: center;
-     background-color: #4c4981;
-     padding-bottom: 20px;
-     margin-top: 10px;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    background-image: url("images/imgfoot2.jpg");
+    background-size: ;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    flex: 2;
 }
