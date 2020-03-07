@@ -24,6 +24,15 @@
   justify-content: center;
   align-items: center;
 }
+.flexMQ {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.centerFlexMQ {
+  justify-content: center;
+  align-items: center;
+}
 * {
   box-sizing: border-box;
 }
@@ -36,9 +45,25 @@ body {
   background-size: fit;
   background-repeat: no-repeat;
 }
+@media (max-width 700px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .container {
   max-width: 1620px;
   margin: 0 auto;
+}
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 .container header.header-content {
   width: 100%;
@@ -47,6 +72,13 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
   padding-left: 10px;
+}
+@media (max-width: 700px) {
+  .container header.header-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 .container main {
   width: 100%;
@@ -88,6 +120,15 @@ main {
   padding-top: 15px;
   display: flex;
 }
+@media (max-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 div.main-content-left {
   width: 49%;
   height: auto;
@@ -100,6 +141,11 @@ div.main-content-left {
   padding: 15px;
   position: relative;
 }
+@media (max-width: 700) {
+  div.main-content-left {
+    display: grid;
+  }
+}
 .disc {
   width: 16em;
   height: 16em;
@@ -110,10 +156,22 @@ div.main-content-left {
   right: -9.5em;
   transform: translateY(-50%);
 }
+@media (max-width: 700px) {
+  .disc {
+    top: -80px;
+    right: 0;
+  }
+}
 .disc-content {
   font-family: "Trade Winds";
   font-size: 7em;
   color: #4c4981;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .disc-content {
+    margin-top: 20px;
+  }
 }
 div.main-content-right {
   width: 49%;
@@ -135,6 +193,12 @@ p {
   color: black;
   text-shadow: 0 -0.05em 0.05em lightgray;
 }
+@media (max-width: 700px) {
+  p {
+    font-size: 2em;
+    margin-top: 0px;
+  }
+}
 button {
   padding: 0.3em 0.8em;
   border: 1px solid #446d88;
@@ -146,6 +210,11 @@ button {
   text-shadow: 0 -0.05em 0.05em #335166;
   font-size: 225%;
   line-height: 1.5;
+}
+@media (max-width: 700px) {
+  button {
+    font-size: 80%;
+  }
 }
 h2 {
   font-family: "Trade Winds";
